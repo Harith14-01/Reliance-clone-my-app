@@ -1,0 +1,42 @@
+.socialMediaAndStoreLinks {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  /* background-color: aqua; */
+  margin-left: 2%;
+}
+
+.socialMediaLinksContainer {
+  /* background-color: blueviolet; */
+  > h3 {
+    font-size: 16px;
+  }
+  > div {
+    display: flex;
+    /* background-color: aqua; */
+    >a{
+      > svg {
+        color: #fff;
+        margin: 8px 10px 10px 0;
+        &:hover{
+          color: #ffffffb0;
+        }
+      }
+    }
+  }
+}
+
+.storeLinksContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  > h3 {
+    font-size: 16px;
+  }
+  > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: fit-content;
+  }
+}
